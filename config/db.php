@@ -2,9 +2,9 @@
 
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=training',
+    'dsn' => 'mysql:host=127.0.0.1;dbname=si_db',
     'username' => 'root',
-    'password' => '',
+    'password' => 'mysql',
     'charset' => 'utf8',
 
     // Schema cache options (for production environment)

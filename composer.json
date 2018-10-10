@@ -18,7 +18,8 @@
         "yiisoft/yii2": "~2.0.14",
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0",
-        "amnah/yii2-user": "^5.0"
+        "amnah/yii2-user": "^5.0",
+        "c006/yii2-migration-utility": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
