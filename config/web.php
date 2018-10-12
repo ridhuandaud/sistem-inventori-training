@@ -20,14 +20,10 @@ $config = [
             'class' => 'yii\caching\FileCache',
         ],
         'user' => [
-            'identityClass' => 'app\models\User',
-            'enableAutoLogin' => true,
+            'class' => 'app\modules\user\components\User',
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
-        ],
-        'user' => [
-            'class' => 'amnah\yii2\user\components\User',
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
@@ -57,11 +53,19 @@ $config = [
     ],
     'modules' => [
         'user' => [
-            'class' => 'amnah\yii2\user\Module',
-            // set custom module properties here ...
+            'class' => 'app\modules\user\Module',
         ],
         'utility' => [
             'class' => 'c006\utility\migration\Module',
+        ],
+        'asset' => [
+            'class' => 'app\modules\asset\Module',
+        ],
+        'borrow' => [
+            'class' => 'app\modules\borrow\Module',
+        ],
+        'asset_owner' => [
+            'class' => 'app\modules\asset_owner\Module',
         ],
     ],
     'params' => $params,
